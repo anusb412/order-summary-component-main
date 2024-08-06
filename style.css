@@ -1,8 +1,113 @@
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
-    .box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+:root {
+      /*--'type'-'shade'-'str':
+    --clr-neutral-100: hsl()
+    --ff-base: Roboto, sans-serif;
+    --fw-regular: 400;
+    --fs-400: 1rem;
+    */
+
+    --clr-pblue:hsl(225, 100%, 94%);
+    --clr-vpblue:hsl(225, 100%, 98%);
+    --clr-bblue:hsl(245, 75%, 52%);
+    --clr-desblue:hsl(224, 23%, 55%);
+    --clr-dblue: hsl(223, 47%, 23%);
+
+    --ff-base: 'Red Hat Display', sans-serif;
+    --fw-light: 500;
+    --fw-regular: 700;
+    --fw-bold: 900;
+
+    --fs-400: 1rem;
+
+
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+  /* Remove default margin */
+  body,
+  h1,
+  p {
+    margin: 0;
+  }
+
+  ul[role='list'],
+  ol[role='list'] {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{ 
+    font-family: var(--ff-base);
+    font-size: var(--fs-400);
+    color: var(--clr-dblue);
+  }
+
+  @media (min-width: 600px) {
+    body {
+      min-height:100vh;
+      display:grid;
+      place-items:center;
     }
+
+    .newsletter-cta {
+      max-width: 20rem;
+      text-align: center;
+    }
+
+    
+    .section-title {
+      font-weight: var(--fw-bold);
+      font-size: 1.25rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    p1 {
+      text-align: center;
+    }
+
+    .toppic {
+      border-radius: 2rem 2rem 0 0;
+    }
+
+    .button1 {
+      color: white;
+      line-height: 1;
+      background-color: var(--clr-bblue);
+      padding: 1rem 2rem;
+      border: 0;
+      border-radius: 100vw;
+      cursor: pointer;
+      width: 300px;
+    }
+    .button2 {
+      color: white;
+      line-height: 1;
+      background-color: var(--clr-bblue);
+      padding: 1rem 2rem;
+      border: 0;
+      border-radius: 100vw;
+      cursor: pointer;
+      width: 300px;
+    }
+
+    .payments {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
